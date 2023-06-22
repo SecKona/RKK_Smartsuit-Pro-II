@@ -22,7 +22,7 @@ The file directory could be divided as follow:
 ### RKK_Records (Without annotation) & csv_original (Annotated)
 
 This folder includes .bvh files output from RKK studio and corresponding .csv files.
-* 'bvh_convert.bat' a bat file to automaticly convert specified 6 classes bvh files into csv files (cmd: bvh-converter ****.bvh)
+* 'bvh_convert.bat' a batch file to automaticly convert specified 6 classes bvh files into csv files (cmd: bvh-converter ****.bvh)
 * How to output recorded bvh files: use module of 'Export' in RKK studio with default settings, note that the data head may be different for advanced version.
 * Before using converted csv files, it should be handcraft annotated (In EXCEL: add a column 'Activity' and mark the type of activity)
 
