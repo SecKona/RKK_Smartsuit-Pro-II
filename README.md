@@ -8,6 +8,7 @@ Jierui Li, aka 'SecKona' https://github.com/SecKona
 
 ## Environment & devices
 
+You can download this project and import it into Pycharm IDE, settings maybe automaticly initialized
 * Devices: ROKOKO smart suit pro II, WIFI router and computer installed with following software.
 * Software: ROKOKO studio release-2.4.1.63 (aaf09ad), Pycharm community edition 2023.1
 * Libraries: python 3.11.0, Tensorflow 2.12.0, numpy, pandas, matplotlib
@@ -20,6 +21,10 @@ The file directory could be divided as follow:
 
 This folder includes .bvh files output from RKK studio and corresponding .csv files.
 * 'bvh_convert.bat' a bat file to automaticly convert 6 classes bvh files into csv files
+
+### models
+
+This folder includes saved models
 
 ### 'loadDataset.py'
 
@@ -50,5 +55,6 @@ These codes perform model training approach and save loss curve/accuracy curve w
 ### 'realTimeClassification.py'
 
 This source code includes function used for prototype of real-time classifier
+* Prerequisites: connect smart suit with RKK studio, and use 'livestream' module to set stream with udp address/port
 
 Note: this kind of approach perform classification with an interval according to the window size, maybe it's possible to realize 'real real-time' for every sample frame using a buffer-like container. (i.e.,  dataframe -> [queue] -> model => activity, add a new frame while delete the earliest one)
