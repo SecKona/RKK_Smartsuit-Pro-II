@@ -40,7 +40,7 @@ Note: the loding function is wrote as fixed codes, it could be better if creatin
 
 This kind of python source codes include the structure of the model used in training process.
 
-Note: the model params could be automaticly fine-tuned by using tensorflow 'Keras Tuner' API
+Note: the model params could be automaticly fine-tuned by using tensorflow 'Keras Tuner' or 'Tensor board' API
 
 ### 'plotCMFigure.py'
 
