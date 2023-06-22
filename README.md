@@ -38,6 +38,8 @@ This python source code includes funtion used for loading training data from fol
 
 This kind of python source codes include the structure of the model used in training process.
 
+Note: the model params could be automaticly fine-tuned by using tensorflow 'Keras Tuner' API
+
 ### 'plotCMFigure.py'
 
 This python source code will load trained models in folder 'models' and load testset for classification, then create confusion matrices into folder 'confusionMatrices' 
