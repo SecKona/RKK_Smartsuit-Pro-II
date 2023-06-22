@@ -2,6 +2,10 @@
 
 Project 'RKK_Smartsuit-Pro-II' includes code used in the thesis. 
 
+## Author
+
+Jierui Li, aka 'SecKona' https://github.com/SecKona
+
 ## Environment & devices
 
 * Devices: ROKOKO smart suit pro II, WIFI router and computer installed with following software.
@@ -21,7 +25,7 @@ This folder includes .bvh files output from RKK studio and corresponding .csv fi
 
 This python source code includes funtion used for loading training data from folder 'csv_original' into specified format, and performing 'sliding window' approach.
 
-### 'model_###.py'
+### 'model_***.py'
 
 This kind of python source codes include the structure of the model used in training process.
 
@@ -33,7 +37,7 @@ This python source code will load trained models in folder 'models' and load tes
 
 This python source code will load training data, plot and save figures into folder 'signalFigure'
 
-### '###Test.py'
+### '***Test.py'
 
 These python source codes will load testset and use them for testing (test round = 10), meanwhile record the time consumption/accuracy and save box plots into folder 'paramTestFigure'
 
