@@ -13,7 +13,7 @@ You can download this project and import it into Pycharm IDE, settings maybe aut
 * Software: ROKOKO studio release-2.4.1.63 (aaf09ad), Pycharm community edition 2023.1
 * Libraries: python 3.11.0, Tensorflow 2.12.0, numpy, pandas, matplotlib
 
-## Files in thie folder
+## Files in the folder
 
 The file directory could be divided as follow:
 
