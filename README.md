@@ -34,6 +34,8 @@ This folder includes saved models
 
 This python source code includes funtion used for loading training data from folder 'csv_original' into specified format, and performing 'sliding window' approach, reshape them into required shape to feed in models.
 
+Note: the loding function is wrote as fixed codes, it could be better if creating an uniform interface for loading more type of data 
+
 ### 'model_***.py'
 
 This kind of python source codes include the structure of the model used in training process.
