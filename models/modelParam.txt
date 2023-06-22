@@ -1,0 +1,40 @@
+Model: "sequential"
+______________________________________________________________________________________
+ Layer (type)			Output Shape		Param #   
+====================================================
+ conv1d (Conv1D)			(None, 30, 16)		3088       
+                                                                 
+ conv1d_1 (Conv1D)		(None, 28, 16)		784       
+                                                                 
+ dropout (Dropout)			(None, 28, 16)		0         
+                                                                 
+ max_pooling1d (MaxPooling1D)  	(None, 14, 16)		0                                                                    
+ flatten (Flatten)           		(None, 224)		0         
+                                                                 
+ dense (Dense)               		(None, 100)		22500     
+                                                                 
+ dense_1 (Dense)             		(None, 6)			606       
+                                                                 
+====================================================
+Total params: 26,978
+Trainable params: 26,978
+Non-trainable params: 0
+______________________________________________________________________________________
+
+Model: "sequential"
+______________________________________________________________________________________
+ Layer (type)		Output Shape		Param #   
+====================================================
+ lstm (LSTM)		(None, 64)		33024     
+                                                                 
+ dropout (Dropout)		(None, 64)		0         
+                                                                 
+ dense (Dense)		(None, 64)		4160     
+                                                                 
+ dense_1 (Dense) 		(None, 6)			390       
+                                                                 
+====================================================
+Total params: 37,574
+Trainable params: 37,574
+Non-trainable params: 0
+______________________________________________________________________________________
