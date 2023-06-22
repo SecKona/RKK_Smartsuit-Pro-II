@@ -19,7 +19,7 @@ You can download this project and import it into Pycharm IDE, settings maybe aut
 
 The file directory could be divided as follow:
 
-### RKK_Records & csv_original
+### RKK_Records (Original data) & csv_original (Annotated)
 
 This folder includes .bvh files output from RKK studio and corresponding .csv files.
 * 'bvh_convert.bat' a bat file to automaticly convert specified 6 classes bvh files into csv files (cmd: bvh-converter ****.bvh)
