@@ -9,9 +9,10 @@ Jierui Li, aka 'SecKona' https://github.com/SecKona
 ## Environment & devices
 
 You can download this project and import it into Pycharm IDE, settings maybe automaticly initialized
-* Devices: ROKOKO smart suit pro II, WIFI router and computer installed with following software.
+* Devices: ROKOKO smart suit pro II, WIFI router and computerinstalled with following software.
+* Operating system: Windows 10 release 22H2
 * Software: ROKOKO studio release-2.4.1.63 (aaf09ad), Pycharm community edition 2023.1
-* Libraries: python 3.11.0, Tensorflow 2.12.0, numpy, pandas, matplotlib
+* Libraries: python 3.11.0, Tensorflow 2.12.0, numpy, pandas, matplotlib, pip, graphviz for model structure drawings
 * More tutorials: Tensorflow: https://www.tensorflow.org/; Pycharm: https://www.jetbrains.com/pycharm/; ROKOKO: https://www.rokoko.com/
 
 ## Files in the folder
