@@ -30,7 +30,7 @@ This folder includes saved models
 
 ### 'loadDataset.py'
 
-This python source code includes funtion used for loading training data from folder 'csv_original' into specified format, and performing 'sliding window' approach.
+This python source code includes funtion used for loading training data from folder 'csv_original' into specified format, and performing 'sliding window' approach, reshape them into required shape to feed in models.
 
 ### 'model_***.py'
 
