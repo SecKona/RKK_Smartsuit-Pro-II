@@ -1,6 +1,6 @@
 # RKK_Smartsuit-Pro-II
 
-Project 'RKK_Smartsuit-Pro-II' includes code used in the thesis. 
+Project 'RKK_Smartsuit-Pro-II' includes code used in the thesis "Real-Time Human Activity Recognition using a Full-Body tracking suit". 
 
 ## Author
 
