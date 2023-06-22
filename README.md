@@ -12,6 +12,7 @@ You can download this project and import it into Pycharm IDE, settings maybe aut
 * Devices: ROKOKO smart suit pro II, WIFI router and computer installed with following software.
 * Software: ROKOKO studio release-2.4.1.63 (aaf09ad), Pycharm community edition 2023.1
 * Libraries: python 3.11.0, Tensorflow 2.12.0, numpy, pandas, matplotlib
+* More tutorials: Tensorflow: https://www.tensorflow.org/; Pycharm: https://www.jetbrains.com/pycharm/; ROKOKO: https://www.rokoko.com/
 
 ## Files in the folder
 
