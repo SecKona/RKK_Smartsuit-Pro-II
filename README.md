@@ -22,9 +22,9 @@ The file directory could be divided as follow:
 ### RKK_Records & csv_original
 
 This folder includes .bvh files output from RKK studio and corresponding .csv files.
-* 'bvh_convert.bat' a bat file to automaticly convert specified 6 classes bvh files into csv files
+* 'bvh_convert.bat' a bat file to automaticly convert specified 6 classes bvh files into csv files (cmd: bvh-converter ****.bvh)
 * How to output recorded bvh files: use module of 'Export' in RKK studio with default settings, note that the data head may be different for advanced version.
-* Before use converted csv files, it should be handcraft annotated (In EXCEL: add a column 'Activity' and mark the type of activity)
+* Before using converted csv files, it should be handcraft annotated (In EXCEL: add a column 'Activity' and mark the type of activity)
 
 ### models
 
@@ -61,6 +61,6 @@ These codes perform model training approach and save loss curve/accuracy curve w
 ### 'realTimeClassification.py'
 
 This source code includes function used for prototype of real-time classifier
-* Prerequisites: connect smart suit with RKK studio, and use 'livestreaming' module to set stream with udp address/port corresponding to the configuration in this source code. (This function 'livestreaming' should upgrade RKK account plans, so if it is possible, create a program to analyze udp packet sent from smart suit directly would be better (Actually I failed to analyze the packet because I don't know the data head of it  :-(     ))
+* Prerequisites: connect smart suit with RKK studio, and use 'livestreaming' module to set stream with udp address/port corresponding to the configuration in this source code. (This function 'livestreaming' should upgrade RKK account plans, so if it is possible, create a program to analyze udp packet (i.e., raw IMU data) sent from smart suit directly would be better (Actually I failed to analyze the packet because I don't know the data head of it  :-(     ))
 
 Note: this kind of approach perform classification with an interval according to the window size, maybe it's possible to realize 'real real-time' for every sample frame using a buffer-like container. (i.e.,  dataframe -> [queue] -> model => activity, add a new frame into the queue , meanwhile delete the earliest one)
