@@ -1,8 +1,20 @@
 import loadDataset
 import model_CNN
 import model_LSTM
+import numpy as np
+import os
+import random
 import tensorflow as tf
 from matplotlib import pyplot
+
+
+# Set random states
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+os.environ['PYTHONHASHSEED'] = str(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+tf.random.set_seed(RANDOM_SEED)
+
 
 '''
 '  Function for dynamic learning rate
@@ -22,7 +34,7 @@ def scheduler(epoch):
 '''
 epoch = 50
 batchSize = 64
-windowSize = [8, 16, 64, 128, 256] # 32
+windowSize = [8, 16, 32, 64, 128, 256] # 32
 models = ['CNN', 'LSTM']
 
 '''

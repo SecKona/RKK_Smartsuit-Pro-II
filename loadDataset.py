@@ -47,6 +47,7 @@ def load_csv(file_name, file_path='./csv_original/', axis='XYZ', part='All'):
     dataset.pop('Time')
 
     # Split out height of hips as new feature column
+    # hips_height = pd.DataFrame(dataset['Hips.Y'] - (dataset['LeftFoot.Y'] + dataset['RightFoot.Y']) / 2)
     hips_height = dataset[['Hips.Y']]
     hips_height.columns = ['Hips_height']
     hips_height = hips_height.drop(0)
@@ -82,7 +83,7 @@ def load_csv(file_name, file_path='./csv_original/', axis='XYZ', part='All'):
 '''
 
 
-def sliding_window(dataset_x, dataset_y, window_size, slide_step=2, overlap_rate=0.8):
+def sliding_window(dataset_x, dataset_y, window_size, iloc_num, slide_step=2, overlap_rate=0.8):
     if len(dataset_x) < window_size:
         print('[ERROR]Cannot perform slidingwindow since input sequence is too short!')
         return
@@ -107,6 +108,9 @@ def sliding_window(dataset_x, dataset_y, window_size, slide_step=2, overlap_rate
 
         # start_index += int(window_size * (1 - overlap_rate))
         start_index += slide_step
+
+    output_x = output_x[0:iloc_num]
+    output_y = output_y[0:iloc_num]
 
     return output_x, output_y
 
@@ -133,19 +137,19 @@ def get_dataset(window_size, axis='XYZ', part='All', if_plot=False, prt_shape=Tr
     test_sit_x, test_sit_y = load_csv("Sitting_1_worldpos.csv", axis=axis, part=part)
 
     # Perform slidingwindow approach
-    train_jog_x, train_jog_y = sliding_window(train_jog_x, train_jog_y, window_size)
-    train_jump_x, train_jump_y = sliding_window(train_jump_x, train_jump_y, window_size)
-    train_stand_x, train_stand_y = sliding_window(train_stand_x, train_stand_y, window_size)
-    train_walk_x, train_walk_y = sliding_window(train_walk_x, train_walk_y, window_size)
-    train_lay_x, train_lay_y = sliding_window(train_lay_x, train_lay_y, window_size)
-    train_sit_x, train_sit_y = sliding_window(train_sit_x, train_sit_y, window_size)
+    train_jog_x, train_jog_y = sliding_window(train_jog_x, train_jog_y, window_size, 190)
+    train_jump_x, train_jump_y = sliding_window(train_jump_x, train_jump_y, window_size, 190)
+    train_stand_x, train_stand_y = sliding_window(train_stand_x, train_stand_y, window_size, 190)
+    train_walk_x, train_walk_y = sliding_window(train_walk_x, train_walk_y, window_size, 190)
+    train_lay_x, train_lay_y = sliding_window(train_lay_x, train_lay_y, window_size, 190)
+    train_sit_x, train_sit_y = sliding_window(train_sit_x, train_sit_y, window_size, 190)
 
-    test_jump_x, test_jump_y = sliding_window(test_jump_x, test_jump_y, window_size)
-    test_jog_x, test_jog_y = sliding_window(test_jog_x, test_jog_y, window_size)
-    test_stand_x, test_stand_y = sliding_window(test_stand_x, test_stand_y, window_size)
-    test_walk_x, test_walk_y = sliding_window(test_walk_x, test_walk_y, window_size)
-    test_lay_x, test_lay_y = sliding_window(test_lay_x, test_lay_y, window_size)
-    test_sit_x, test_sit_y = sliding_window(test_sit_x, test_sit_y, window_size)
+    test_jump_x, test_jump_y = sliding_window(test_jump_x, test_jump_y, window_size, 10)
+    test_jog_x, test_jog_y = sliding_window(test_jog_x, test_jog_y, window_size, 10)
+    test_stand_x, test_stand_y = sliding_window(test_stand_x, test_stand_y, window_size, 10)
+    test_walk_x, test_walk_y = sliding_window(test_walk_x, test_walk_y, window_size, 10)
+    test_lay_x, test_lay_y = sliding_window(test_lay_x, test_lay_y, window_size, 10)
+    test_sit_x, test_sit_y = sliding_window(test_sit_x, test_sit_y, window_size, 10)
 
     # Merge dataset_x and dataset_y
     train_x = np.concatenate((train_jog_x, train_jump_x, train_stand_x, train_walk_x, train_lay_x, train_sit_x), axis=0)

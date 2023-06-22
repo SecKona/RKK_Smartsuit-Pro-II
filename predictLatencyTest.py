@@ -1,8 +1,18 @@
 import loadDataset
 import numpy as np
 import time
+import os
+import random
+import tensorflow as tf
 from matplotlib import pyplot
 from tensorflow import keras
+
+# Set random states
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+os.environ['PYTHONHASHSEED'] = str(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+tf.random.set_seed(RANDOM_SEED)
 
 # Make numpy values easier to read.
 np.set_printoptions(precision=3, suppress=True)
@@ -44,7 +54,7 @@ def summarize_results(scores, params, model_type):
     pyplot.ylabel('Predict time (in s)')
 
     # Output figure
-    pyplot.savefig('./paramTestFigure/Figure_predict_latency_' + model_type + '.png')
+    # pyplot.savefig('./paramTestFigure/Figure_predict_latency_' + model_type + '.png')
     print('----  Figure saved  ----')
     pyplot.show()
 
@@ -85,5 +95,5 @@ window_sizes = [8, 16, 32, 64, 128, 256]
 '''
 '  Main function
 '''
-run_experiment(window_sizes, 'CNN')
+# run_experiment(window_sizes, 'CNN')
 run_experiment(window_sizes, 'LSTM')

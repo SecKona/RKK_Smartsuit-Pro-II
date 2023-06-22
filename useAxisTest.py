@@ -2,19 +2,22 @@ import loadDataset
 import model_CNN
 import model_LSTM
 import numpy as np
+import os
+import random
 import tensorflow as tf
 from matplotlib import pyplot
 
+
+# Set random states
+RANDOM_SEED = 42
+random.seed(RANDOM_SEED)
+os.environ['PYTHONHASHSEED'] = str(RANDOM_SEED)
+np.random.seed(RANDOM_SEED)
+tf.random.set_seed(RANDOM_SEED)
+
 # Make numpy values easier to read.
 np.set_printoptions(precision=3, suppress=True)
-# Set GPU
-gpus = tf.config.list_physical_devices("GPU")
-if gpus:
-    # Use GPU 0
-    gpu0 = gpus[0]
-    # Set GPU RAM
-    tf.config.experimental.set_memory_growth(gpu0, True)
-    tf.config.set_visible_devices([gpu0], "GPU")
+
 
 '''
 '  Function for dynamic learning rate

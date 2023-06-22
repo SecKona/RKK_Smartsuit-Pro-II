@@ -53,8 +53,8 @@ def plot_cm_figure(dataset_x, dataset_y, model_type, window_size, save_fig=True)
 '''
 '  Config
 '''
-windowSize = [8, 16, 32, 64, 128, 256]
-# windowSize = [32]
+# windowSize = [8, 16, 32, 64, 128, 256]
+windowSize = [32]
 
 '''
 '  Main function
