@@ -56,6 +56,6 @@ These codes perform model training approach and save loss curve/accuracy curve w
 ### 'realTimeClassification.py'
 
 This source code includes function used for prototype of real-time classifier
-* Prerequisites: connect smart suit with RKK studio, and use 'livestream' module to set stream with udp address/port (This function should upgrade account plans, so if it is possible, create a program to analyze udp packet sent from smart suit directly would be better (Actually I failed to analyze the packet because I don't know the data head of it  :(  ))
+* Prerequisites: connect smart suit with RKK studio, and use 'livestream' module to set stream with udp address/port (This function should upgrade account plans, so if it is possible, create a program to analyze udp packet sent from smart suit directly would be better (Actually I failed to analyze the packet because I don't know the data head of it  :-(     ))
 
 Note: this kind of approach perform classification with an interval according to the window size, maybe it's possible to realize 'real real-time' for every sample frame using a buffer-like container. (i.e.,  dataframe -> [queue] -> model => activity, add a new frame while delete the earliest one)
