@@ -1,0 +1,523 @@
+C:\Users\SecKona\AppData\Local\Programs\Python\Python311\python.exe C:\Users\SecKona\Desktop\HAR_Model\HAR\usePartTest.py 
+
+--- Start experiment ---
+
+
+ModelType: CNN
+
+---- Used part = Head----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+94.085%
+83.219%
+97.524%
+91.334%
+97.524%
+98.212%
+98.900%
+83.356%
+98.487%
+82.944%
+
+---- Used part = Neck----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+96.974%
+98.762%
+93.673%
+99.312%
+68.776%
+99.725%
+100.000%
+83.219%
+66.713%
+68.088%
+
+---- Used part = Hips----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+98.349%
+97.249%
+86.520%
+74.003%
+95.323%
+99.175%
+96.699%
+94.773%
+86.382%
+99.587%
+
+---- Used part = Shoulder----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+96.699%
+99.862%
+98.762%
+83.906%
+97.937%
+97.387%
+97.799%
+96.561%
+85.832%
+93.948%
+
+---- Used part = Arm----
+
+Shape of train_x and train_y:
+(1828, 32, 13) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 13) (727, 6)
+
+Round: 10
+90.096%
+94.773%
+88.583%
+88.308%
+91.609%
+90.371%
+85.832%
+79.505%
+88.308%
+90.922%
+
+---- Used part = ForeArm----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+68.913%
+82.393%
+81.293%
+83.906%
+84.732%
+84.594%
+81.981%
+83.219%
+85.007%
+77.992%
+
+---- Used part = Hand----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+74.553%
+76.616%
+67.538%
+75.241%
+80.880%
+69.051%
+73.177%
+74.691%
+78.955%
+69.464%
+
+---- Used part = Thigh----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+97.387%
+98.074%
+96.561%
+97.387%
+80.055%
+85.420%
+83.906%
+92.572%
+85.832%
+82.118%
+
+---- Used part = Shin----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+91.609%
+85.007%
+81.981%
+94.360%
+89.271%
+95.598%
+69.051%
+86.795%
+88.583%
+90.096%
+
+---- Used part = Foot----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+63.549%
+96.011%
+98.487%
+99.312%
+79.505%
+99.312%
+79.917%
+97.524%
+98.624%
+96.424%
+
+---- Used part = Toe----
+
+Shape of train_x and train_y:
+(1828, 32, 13) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 13) (727, 6)
+
+Round: 10
+96.011%
+96.974%
+96.424%
+97.937%
+97.387%
+98.074%
+97.799%
+95.736%
+92.022%
+97.387%
+
+---- Used part = ToeTip----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+76.479%
+82.806%
+96.974%
+98.349%
+92.022%
+95.736%
+87.758%
+97.387%
+98.624%
+84.457%
+
+--- Summarize result ---
+
+Param=Head: 92.558% (+/-6.518)
+Param=Neck: 87.524% (+/-13.703)
+Param=Hips: 92.806% (+/-7.725)
+Param=Shoulder: 94.869% (+/-5.228)
+Param=Arm: 88.831% (+/-3.846)
+Param=ForeArm: 81.403% (+/-4.613)
+Param=Hand: 74.017% (+/-4.106)
+Param=Thigh: 89.931% (+/-6.786)
+Param=Shin: 87.235% (+/-7.193)
+Param=Foot: 90.867% (+/-11.653)
+Param=Toe: 96.575% (+/-1.699)
+Param=ToeTip: 91.059% (+/-7.372)
+
+--- Start experiment ---
+
+
+ModelType: LSTM
+
+---- Used part = Head----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+97.387%
+95.461%
+99.175%
+84.457%
+97.799%
+89.959%
+93.260%
+93.122%
+88.583%
+93.398%
+
+---- Used part = Neck----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+99.862%
+84.457%
+96.699%
+97.111%
+90.784%
+93.398%
+83.906%
+89.133%
+89.821%
+87.208%
+
+---- Used part = Hips----
+
+Shape of train_x and train_y:
+(1828, 32, 4) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 4) (727, 6)
+
+Round: 10
+84.182%
+86.933%
+87.070%
+87.208%
+93.535%
+90.371%
+90.234%
+88.858%
+82.118%
+78.404%
+
+---- Used part = Shoulder----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+88.171%
+97.111%
+90.646%
+95.873%
+95.598%
+92.710%
+98.074%
+97.111%
+93.260%
+96.011%
+
+---- Used part = Arm----
+
+Shape of train_x and train_y:
+(1828, 32, 13) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 13) (727, 6)
+
+Round: 10
+95.598%
+95.598%
+97.799%
+94.085%
+91.747%
+91.197%
+93.122%
+90.646%
+96.286%
+99.450%
+
+---- Used part = ForeArm----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+96.561%
+95.873%
+99.450%
+96.011%
+94.360%
+86.657%
+92.710%
+99.312%
+93.260%
+97.799%
+
+---- Used part = Hand----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+94.498%
+82.806%
+91.197%
+92.435%
+92.022%
+89.546%
+94.085%
+89.684%
+90.371%
+92.572%
+
+---- Used part = Thigh----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+91.472%
+87.345%
+91.472%
+92.160%
+95.323%
+96.561%
+87.070%
+84.182%
+91.059%
+94.498%
+
+---- Used part = Shin----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+88.996%
+85.144%
+81.843%
+87.483%
+83.219%
+88.308%
+83.631%
+85.970%
+84.869%
+88.996%
+
+---- Used part = Foot----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+95.873%
+92.435%
+97.662%
+97.662%
+97.524%
+89.133%
+98.762%
+94.911%
+96.561%
+96.149%
+
+---- Used part = Toe----
+
+Shape of train_x and train_y:
+(1828, 32, 13) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 13) (727, 6)
+
+Round: 10
+94.223%
+94.635%
+91.884%
+96.011%
+94.085%
+96.424%
+94.773%
+96.011%
+92.435%
+92.022%
+
+---- Used part = ToeTip----
+
+Shape of train_x and train_y:
+(1828, 32, 7) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 7) (727, 6)
+
+Round: 10
+84.457%
+93.948%
+94.360%
+94.911%
+89.409%
+92.297%
+89.133%
+92.435%
+90.096%
+89.409%
+
+--- Summarize result ---
+
+Param=Head: 93.260% (+/-4.333)
+Param=Neck: 91.238% (+/-5.157)
+Param=Hips: 86.891% (+/-4.166)
+Param=Shoulder: 94.457% (+/-3.024)
+Param=Arm: 94.553% (+/-2.764)
+Param=ForeArm: 95.199% (+/-3.582)
+Param=Hand: 90.922% (+/-3.141)
+Param=Thigh: 91.114% (+/-3.726)
+Param=Shin: 85.846% (+/-2.406)
+Param=Foot: 95.667% (+/-2.753)
+Param=Toe: 94.250% (+/-1.588)
+Param=ToeTip: 91.045% (+/-3.020)
+
+进程已结束,退出代码0

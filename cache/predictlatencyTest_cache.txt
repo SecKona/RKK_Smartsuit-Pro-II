@@ -1,0 +1,259 @@
+C:\Users\SecKona\AppData\Local\Programs\Python\Python311\python.exe C:\Users\SecKona\Desktop\HAR_Model\HAR\predictLatencyTest.py 
+
+--- Start experiment ---
+
+
+---- WindowSize = 8 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1900, 8, 64) (1900, 6)
+
+Shape of test_x and test_y:
+(799, 8, 64) (799, 6)
+0.212
+0.135
+0.134
+0.140
+0.131
+0.143
+0.132
+0.132
+0.131
+0.136
+
+---- WindowSize = 16 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1876, 16, 64) (1876, 6)
+
+Shape of test_x and test_y:
+(775, 16, 64) (775, 6)
+0.146
+0.137
+0.136
+0.136
+0.139
+0.136
+0.139
+0.132
+0.138
+0.137
+
+---- WindowSize = 32 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+0.155
+0.143
+0.142
+0.144
+0.136
+0.141
+0.139
+0.140
+0.136
+0.141
+
+---- WindowSize = 64 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1732, 64, 64) (1732, 6)
+
+Shape of test_x and test_y:
+(631, 64, 64) (631, 6)
+0.164
+0.144
+0.148
+0.147
+0.145
+0.146
+0.150
+0.148
+0.145
+0.148
+
+---- WindowSize = 128 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1540, 128, 64) (1540, 6)
+
+Shape of test_x and test_y:
+(439, 128, 64) (439, 6)
+0.158
+0.143
+0.145
+0.143
+0.147
+0.143
+0.141
+0.144
+0.148
+0.142
+
+---- WindowSize = 256 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1156, 256, 64) (1156, 6)
+
+Shape of test_x and test_y:
+(55, 256, 64) (55, 6)
+0.130
+0.117
+0.113
+WARNING:tensorflow:5 out of the last 21 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002141CEAA660> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+0.113
+WARNING:tensorflow:6 out of the last 23 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000002141D4D7240> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+0.115
+0.115
+0.114
+0.113
+0.113
+0.115
+
+--- Summarize result ---
+
+Param=8: 0.143 (+/-0.023)
+Param=16: 0.138 (+/-0.004)
+Param=32: 0.142 (+/-0.005)
+Param=64: 0.148 (+/-0.005)
+Param=128: 0.145 (+/-0.005)
+Param=256: 0.116 (+/-0.005)
+----  Figure saved  ----
+
+--- Start experiment ---
+
+
+---- WindowSize = 8 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1900, 8, 64) (1900, 6)
+
+Shape of test_x and test_y:
+(799, 8, 64) (799, 6)
+0.475
+0.458
+0.461
+0.464
+0.463
+0.472
+0.461
+0.466
+0.462
+0.464
+
+---- WindowSize = 16 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1876, 16, 64) (1876, 6)
+
+Shape of test_x and test_y:
+(775, 16, 64) (775, 6)
+0.677
+0.486
+0.484
+0.481
+0.484
+0.688
+0.486
+0.478
+0.477
+0.480
+
+---- WindowSize = 32 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+0.716
+0.517
+0.513
+0.517
+0.560
+0.546
+0.511
+0.510
+0.507
+0.503
+
+---- WindowSize = 64 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1732, 64, 64) (1732, 6)
+
+Shape of test_x and test_y:
+(631, 64, 64) (631, 6)
+0.745
+0.556
+0.551
+0.553
+0.552
+0.771
+0.556
+0.553
+0.545
+0.550
+
+---- WindowSize = 128 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1540, 128, 64) (1540, 6)
+
+Shape of test_x and test_y:
+(439, 128, 64) (439, 6)
+0.805
+0.592
+0.589
+0.604
+0.588
+0.597
+0.606
+0.604
+0.601
+0.596
+
+---- WindowSize = 256 ----
+---- Loading dataset ----
+
+Shape of train_x and train_y:
+(1156, 256, 64) (1156, 6)
+
+Shape of test_x and test_y:
+(55, 256, 64) (55, 6)
+0.470
+0.462
+0.467
+0.461
+0.466
+0.466
+0.462
+0.465
+0.458
+0.463
+
+--- Summarize result ---
+
+Param=8: 0.465 (+/-0.005)
+Param=16: 0.522 (+/-0.080)
+Param=32: 0.540 (+/-0.061)
+Param=64: 0.593 (+/-0.083)
+Param=128: 0.618 (+/-0.063)
+Param=256: 0.464 (+/-0.003)
+----  Figure saved  ----
+
+进程已结束,退出代码0

@@ -1,0 +1,187 @@
+C:\Users\SecKona\AppData\Local\Programs\Python\Python311\python.exe C:\Users\SecKona\Desktop\HAR_Model\HAR\useAxisTest.py 
+
+--- Start experiment ---
+
+
+ModelType: CNN
+
+---- Used axis = ----X
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+77.442%
+84.732%
+61.623%
+77.304%
+90.509%
+76.204%
+79.780%
+85.970%
+89.133%
+84.044%
+
+---- Used axis = ----Y
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+80.193%
+91.334%
+86.245%
+84.044%
+89.821%
+86.245%
+88.308%
+81.568%
+89.133%
+74.966%
+
+---- Used axis = ----Z
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+79.780%
+78.129%
+74.415%
+77.854%
+67.950%
+77.717%
+61.210%
+80.880%
+74.278%
+82.669%
+
+---- Used axis = ----XYZ
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+
+Round: 10
+91.472%
+80.468%
+83.631%
+84.457%
+94.635%
+88.446%
+93.948%
+90.371%
+85.557%
+87.620%
+
+--- Summarize result ---
+
+Param=X: 80.674% (+/-7.935)
+Param=Y: 85.186% (+/-4.803)
+Param=Z: 75.488% (+/-6.163)
+Param=XYZ: 88.061% (+/-4.379)
+
+--- Start experiment ---
+
+
+ModelType: LSTM
+
+---- Used axis = ----X
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+81.981%
+85.420%
+78.680%
+82.393%
+81.431%
+80.193%
+85.420%
+77.992%
+77.717%
+81.981%
+
+---- Used axis = ----Y
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+98.349%
+98.624%
+96.286%
+98.349%
+98.762%
+96.836%
+99.037%
+97.387%
+97.111%
+99.450%
+
+---- Used axis = ----Z
+
+Shape of train_x and train_y:
+(1828, 32, 22) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 22) (727, 6)
+
+Round: 10
+83.769%
+87.345%
+93.260%
+93.535%
+86.657%
+93.398%
+87.070%
+91.197%
+84.182%
+89.271%
+
+---- Used axis = ----XYZ
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+
+Round: 10
+89.821%
+94.223%
+97.524%
+93.948%
+97.249%
+91.747%
+94.085%
+93.260%
+97.662%
+92.572%
+
+--- Summarize result ---
+
+Param=X: 81.320% (+/-2.607)
+Param=Y: 98.019% (+/-0.992)
+Param=Z: 88.968% (+/-3.542)
+Param=XYZ: 94.209% (+/-2.472)
+
+进程已结束,退出代码0

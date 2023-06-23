@@ -1,0 +1,271 @@
+C:\Users\SecKona\AppData\Local\Programs\Python\Python311\python.exe C:\Users\SecKona\Desktop\HAR_Model\HAR\windowSizeTest.py 
+
+--- Start experiment ---
+
+
+ModelType: CNN
+
+---- WindowSize = 8 ----
+
+Shape of train_x and train_y:
+(1900, 8, 64) (1900, 6)
+
+Shape of test_x and test_y:
+(799, 8, 64) (799, 6)
+
+Round: 10
+86.483%
+70.964%
+77.347%
+76.846%
+73.342%
+74.343%
+74.093%
+74.718%
+73.842%
+74.844%
+
+---- WindowSize = 16 ----
+
+Shape of train_x and train_y:
+(1876, 16, 64) (1876, 6)
+
+Shape of test_x and test_y:
+(775, 16, 64) (775, 6)
+
+Round: 10
+89.161%
+90.710%
+86.452%
+83.355%
+93.548%
+85.161%
+88.129%
+83.871%
+89.806%
+87.871%
+
+---- WindowSize = 32 ----
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+
+Round: 10
+91.747%
+92.985%
+80.055%
+95.186%
+95.736%
+94.223%
+98.762%
+90.509%
+88.171%
+84.869%
+
+---- WindowSize = 64 ----
+
+Shape of train_x and train_y:
+(1732, 64, 64) (1732, 6)
+
+Shape of test_x and test_y:
+(631, 64, 64) (631, 6)
+
+Round: 10
+95.563%
+94.929%
+81.141%
+91.601%
+80.666%
+84.945%
+85.737%
+94.770%
+96.989%
+84.152%
+
+---- WindowSize = 128 ----
+
+Shape of train_x and train_y:
+(1540, 128, 64) (1540, 6)
+
+Shape of test_x and test_y:
+(439, 128, 64) (439, 6)
+
+Round: 10
+91.572%
+84.966%
+87.927%
+85.194%
+82.005%
+83.144%
+85.421%
+92.711%
+90.205%
+80.182%
+
+---- WindowSize = 256 ----
+
+Shape of train_x and train_y:
+(1156, 256, 64) (1156, 6)
+
+Shape of test_x and test_y:
+(55, 256, 64) (55, 6)
+
+Round: 10
+76.364%
+72.727%
+100.000%
+67.273%
+85.455%
+72.727%
+69.091%
+63.636%
+94.545%
+100.000%
+
+--- Summarize result ---
+
+Param=8: 75.682% (+/-3.973)
+Param=16: 87.806% (+/-3.025)
+Param=32: 91.224% (+/-5.293)
+Param=64: 89.049% (+/-6.032)
+Param=128: 86.333% (+/-3.955)
+Param=256: 80.182% (+/-13.072)
+
+--- Start experiment ---
+
+
+ModelType: LSTM
+
+---- WindowSize = 8 ----
+
+Shape of train_x and train_y:
+(1900, 8, 64) (1900, 6)
+
+Shape of test_x and test_y:
+(799, 8, 64) (799, 6)
+
+Round: 10
+96.496%
+95.745%
+92.491%
+95.620%
+94.118%
+94.368%
+92.741%
+96.496%
+95.494%
+96.621%
+
+---- WindowSize = 16 ----
+
+Shape of train_x and train_y:
+(1876, 16, 64) (1876, 6)
+
+Shape of test_x and test_y:
+(775, 16, 64) (775, 6)
+
+Round: 10
+95.226%
+97.548%
+90.968%
+93.032%
+93.935%
+94.323%
+94.968%
+90.839%
+96.516%
+98.452%
+
+---- WindowSize = 32 ----
+
+Shape of train_x and train_y:
+(1828, 32, 64) (1828, 6)
+
+Shape of test_x and test_y:
+(727, 32, 64) (727, 6)
+
+Round: 10
+98.487%
+91.747%
+97.662%
+92.847%
+94.911%
+95.736%
+94.085%
+88.996%
+94.773%
+97.524%
+
+---- WindowSize = 64 ----
+
+Shape of train_x and train_y:
+(1732, 64, 64) (1732, 6)
+
+Shape of test_x and test_y:
+(631, 64, 64) (631, 6)
+
+Round: 10
+93.027%
+95.246%
+91.759%
+85.578%
+88.906%
+90.967%
+89.223%
+90.967%
+92.235%
+97.147%
+
+---- WindowSize = 128 ----
+
+Shape of train_x and train_y:
+(1540, 128, 64) (1540, 6)
+
+Shape of test_x and test_y:
+(439, 128, 64) (439, 6)
+
+Round: 10
+84.282%
+86.333%
+91.344%
+86.105%
+100.000%
+88.155%
+87.016%
+94.077%
+90.888%
+98.178%
+
+---- WindowSize = 256 ----
+
+Shape of train_x and train_y:
+(1156, 256, 64) (1156, 6)
+
+Shape of test_x and test_y:
+(55, 256, 64) (55, 6)
+
+Round: 10
+81.818%
+81.818%
+90.909%
+81.818%
+81.818%
+94.545%
+81.818%
+81.818%
+100.000%
+85.455%
+
+--- Summarize result ---
+
+Param=8: 95.019% (+/-1.444)
+Param=16: 94.581% (+/-2.409)
+Param=32: 94.677% (+/-2.780)
+Param=64: 91.506% (+/-3.105)
+Param=128: 90.638% (+/-5.056)
+Param=256: 86.182% (+/-6.309)
+
+进程已结束,退出代码0
